@@ -72,8 +72,8 @@ def schedule_amanha():
 
 
     inicio = inicio + datetime.timedelta(minutes=rand)
-    almoco = almoco + datetime.timedelta(minutes=rand)
-    voltaalmoco = voltaalmoco + datetime.timedelta(minutes=rand)
+    #almoco = almoco + datetime.timedelta(minutes=rand)
+    #voltaalmoco = voltaalmoco + datetime.timedelta(minutes=rand)
     saida = saida + datetime.timedelta(minutes=rand)
     
     schedule.every().day.at(str(inicio.time())).do(bater_ponto)
