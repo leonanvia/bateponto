@@ -1,5 +1,5 @@
-SENHA = 'XXXX'
 USUARIO = 'XXXX'
+SENHA = 'XXXX'
 
 
 import schedule
