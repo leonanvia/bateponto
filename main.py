@@ -1,3 +1,7 @@
+SENHA = 'XXXX'
+USUARIO = 'XXXX'
+
+
 import schedule
 from selenium import webdriver
 import random
@@ -5,9 +9,7 @@ import datetime
 from time import sleep
 
 CAMPO_USUARIO = 'userName_relogio_8001'
-USUARIO = 'XXXX'
 CAMPO_SENHA = 'password_relogio_8001'
-SENHA = 'XXXX'
 
 EL_BOTAO_PONTO = 'btEntrada_relogio_8001'
 BOTAO = ''
