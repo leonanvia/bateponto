@@ -1,5 +1,5 @@
-USUARIO = 'XXXXXX'
-SENHA = 'XXXXXX'
+USUARIO = '08912576917'
+SENHA = 'Ever@0821'
 PATH_CHROMEDRIVER = r'C:\Users\lroferre\repos\python\ponto\bateponto\chromedriver.exe'
 
 
