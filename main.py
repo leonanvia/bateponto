@@ -1,5 +1,6 @@
-USUARIO = 'XXXX'
-SENHA = 'XXXX'
+USUARIO = 'XXXXX'
+SENHA = 'XXXXX'
+PATH_CHROMEDRIVER = r'C:\Users\lroferre\repos\python\ponto\bateponto\chromedriver.exe'
 
 
 import schedule
@@ -21,7 +22,7 @@ def inicia_nav():
     options = webdriver.ChromeOptions()
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--headless')
-    driver = webdriver.Chrome(executable_path=r"./chromedriver9204.exe" ,options=options)
+    driver = webdriver.Chrome(executable_path=PATH_CHROMEDRIVER, options=options)
 
 
     driver.get('https://cliente.apdata.com.br/everis/')
@@ -64,6 +65,7 @@ def schedule_amanha():
 
 
     rand = random.randint(-5,5)
+    print(f'Rand = {rand}')
     a = datetime.datetime.now()
     inicio = datetime.datetime(year=a.year, month=a.month, day=a.day ,hour=9, minute=0)
     almoco = datetime.datetime(year=a.year, month=a.month, day=a.day ,hour=12, minute=0)
@@ -83,7 +85,6 @@ def schedule_amanha():
     
 if __name__ == "__main__":
     main()
-    print(schedule.get_jobs())      
     while True:
         schedule.run_pending()
         sleep(300)
